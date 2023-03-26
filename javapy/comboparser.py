@@ -1,4 +1,36 @@
+import os
+import re
+
+class ACombo:
+	def __init__(self, combotext):
+		'''
+		self.player = 
+		self.character = 
+		self.sframe = 
+		self.eframe = 
+		self.didkill = 
+		self.damage = 
+		self.moves = 
+		self.sloc = 
+		self.eloc = 
+		self.first_move = 
+		self.las_move = 
+		'''
+		self.text = [x.strip('\n') for x in combotext]
+
+	def printtext():
+		i = 0
+		for line in combotext:
+			print('line ' + str(i) + ': ' + line)
+
+
+
+
+
+
 def dictmaker(combotext):
+	#print('________COMBO________')
+	#print(combotext)
 	combodict = {}
 	combotext = [x.strip('\n') for x in combotext]
 	player = int(combotext[3][-2:-1])
@@ -51,11 +83,15 @@ def dictmaker(combotext):
 	combodict['Moves'] = moves_full
 	return combodict
 
-
+'''
+Need to make ComboParser be able to get player ids and character ids for certain combos 
+(array where 0th value is name of character of player 0 and 1st value is name of player 1 character) (or whichever the ports are assign character to port)
+'''
 
 def ComboParser(slpfile):
 	os.system('node script.js '+ slpfile +' > out.txt')
 	combos = []
+	raw_combos = []
 	#parsing txt file
 	started = False
 	f = open('out.txt', 'r')
@@ -68,8 +104,34 @@ def ComboParser(slpfile):
 			while '@COMBO END@' not in lines[i]:
 				i = i + 1
 			combo = dictmaker(lines[started:i])
+			raw_combos.append(lines[started:i])
 			started = False
 			startframes.append(combo['Sframe'])
 			combos.append(combo)
 		i = i + 1
-	return combos, startframes
+	return combos, startframes, raw_combos
+
+
+
+def main():
+	combolist , startframelist, rawcombolist = ComboParser('test.slp')
+	outfile = open('out.txt', 'w')
+	for line in rawcombolist:
+		
+		x = ''
+		for word in line:
+			x = x + str(word)
+		outfile.write(x)
+
+
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+	main()
+
