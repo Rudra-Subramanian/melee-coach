@@ -2,37 +2,10 @@ from slippi import Game
 import os
 import re
 import comboparser
+from comboparser import metagetter
 
 
 
-
-def metagetter(game):
-	stage = game.start.stage
-	chars = game.start.players
-	chars = [x for x in chars if x != None]
-	char1 = str(chars[0].character).split('.')[1]
-	char2 = str(chars[1].character).split('.')[1]
-	#trying to associate ports to character
-	all_ports = game.frames[0].ports
-	named_ports = []
-	port_cor = []
-	for port in all_ports:
-		if port != None:
-			named_ports.append(str(port.leader.post.character))
-		else:
-			named_ports.append('InGameCharacter.None')
-
-	named_ports = [x.split('.')[1] for x in named_ports] 
-	try:
-		port_cor.append(named_ports.index(char1))
-	except:
-		port_cor.append(0)
-	named_ports[port_cor[0]] = 5
-	try:
-		port_cor.append(named_ports.index(char2))
-	except:
-		port_cor.append(5)
-	return [stage, char1, char2, port_cor]
 
 
 
