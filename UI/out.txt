@@ -1,0 +1,207 @@
+@ALL COMBOS@
+
+@COMBO START@
+
+{
+  playerIndex: 0,
+  startFrame: 393,
+  endFrame: 458,
+  startPercent: 0,
+  currentPercent: 5,
+  endPercent: 5,
+  moves: [ { playerIndex: 1, frame: 393, moveId: 3, hitCount: 1, damage: 5 } ],
+  didKill: false,
+  lastHitBy: 1
+}
+
+@COMBO END@
+
+@COMBO START@
+
+{
+  playerIndex: 0,
+  startFrame: 711,
+  endFrame: 779,
+  startPercent: 5,
+  currentPercent: 12.600000381469727,
+  endPercent: 12.600000381469727,
+  moves: [
+    { playerIndex: 1, frame: 711, moveId: 2, hitCount: 1, damage: 3 },
+    {
+      playerIndex: 1,
+      frame: 722,
+      moveId: 3,
+      hitCount: 1,
+      damage: 4.600000381469727
+    }
+  ],
+  didKill: false,
+  lastHitBy: 1
+}
+
+@COMBO END@
+
+@COMBO START@
+
+{
+  playerIndex: 0,
+  startFrame: 1848,
+  endFrame: 1905,
+  startPercent: 12.600000381469727,
+  currentPercent: 15.360000610351562,
+  endPercent: 15.360000610351562,
+  moves: [
+    {
+      playerIndex: 1,
+      frame: 1848,
+      moveId: 2,
+      hitCount: 1,
+      damage: 2.760000228881836
+    }
+  ],
+  didKill: false,
+  lastHitBy: 1
+}
+
+@COMBO END@
+
+@COMBO START@
+
+{
+  playerIndex: 1,
+  startFrame: 2022,
+  endFrame: 2314,
+  startPercent: 0,
+  currentPercent: 24.279998779296875,
+  endPercent: 24.279998779296875,
+  moves: [
+    { playerIndex: 0, frame: 2022, moveId: 21, hitCount: 1, damage: 8 },
+    {
+      playerIndex: 0,
+      frame: 2107,
+      moveId: 21,
+      hitCount: 1,
+      damage: 7.279999732971191
+    },
+    {
+      playerIndex: 0,
+      frame: 2241,
+      moveId: 17,
+      hitCount: 1,
+      damage: 8.999999046325684
+    }
+  ],
+  didKill: false,
+  lastHitBy: 0
+}
+
+@COMBO END@
+
+@COMBO START@
+
+{
+  playerIndex: 0,
+  startFrame: 2309,
+  endFrame: 2378,
+  startPercent: 15.360000610351562,
+  currentPercent: 22.280000686645508,
+  endPercent: 22.280000686645508,
+  moves: [
+    {
+      playerIndex: 1,
+      frame: 2309,
+      moveId: 2,
+      hitCount: 1,
+      damage: 2.520000457763672
+    },
+    {
+      playerIndex: 1,
+      frame: 2320,
+      moveId: 3,
+      hitCount: 1,
+      damage: 4.399999618530273
+    }
+  ],
+  didKill: false,
+  lastHitBy: 1
+}
+
+@COMBO END@
+
+@COMBO START@
+
+{
+  playerIndex: 1,
+  startFrame: 2904,
+  endFrame: 3292,
+  startPercent: 24.279998779296875,
+  currentPercent: 71.72000122070312,
+  endPercent: 71.72000122070312,
+  moves: [
+    {
+      playerIndex: 0,
+      frame: 2904,
+      moveId: 17,
+      hitCount: 1,
+      damage: 10.919998168945312
+    },
+    {
+      playerIndex: 0,
+      frame: 2930,
+      moveId: 21,
+      hitCount: 1,
+      damage: 6.959999084472656
+    },
+    {
+      playerIndex: 0,
+      frame: 2982,
+      moveId: 21,
+      hitCount: 1,
+      damage: 6.400001525878906
+    },
+    { playerIndex: 0, frame: 3078, moveId: 16, hitCount: 1, damage: 6 },
+    {
+      playerIndex: 0,
+      frame: 3133,
+      moveId: 21,
+      hitCount: 1,
+      damage: 6.240001678466797
+    },
+    {
+      playerIndex: 0,
+      frame: 3223,
+      moveId: 17,
+      hitCount: 1,
+      damage: 10.920001983642578
+    }
+  ],
+  didKill: false,
+  lastHitBy: 0
+}
+
+@COMBO END@
+
+@COMBO START@
+
+{
+  playerIndex: 1,
+  startFrame: 3324,
+  endFrame: 3502,
+  startPercent: 71.72000122070312,
+  currentPercent: 86.72000122070312,
+  endPercent: 86.72000122070312,
+  moves: [
+    {
+      playerIndex: 0,
+      frame: 3324,
+      moveId: 15,
+      hitCount: 1,
+      damage: 15
+    }
+  ],
+  didKill: false,
+  lastHitBy: 0
+}
+
+@COMBO END@
+
